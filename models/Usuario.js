@@ -8,13 +8,13 @@ const UsuarioSchema = Schema({
     },
     email: {
         type: String,
-        require: true,
+        required: true,
         unique: true
     },
     password: {
         type: String,
-        require: true
+        required: true
     }
 });
 
-module.exports = model('Usuario', UsuarioSchema )
+module.exports = model('Usuario', UsuarioSchema );
